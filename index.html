@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
+    <script src="script.js"></script>
 </head>
 <body>
     <section class="login-container">
         <h1>Login</h1>
         <form action="login"></form>
             <label for="email"></label>
-            <input type="email" placeholder="E-mail" required>
+            <input id="email" type="email" placeholder="E-mail" required>
 
             <label for="password"></label>
-            <input type="password" placeholder="Password" required>
+            <input id="psw" type="password" placeholder="Password" required>
             
+            <div class="incorrect-container" id="incorrect-container"></div>
+
             <a href="#" class="forgot-psw">Forgot Password?</a>
 
-            <button type="submit">Login</button>
+            <button id="submit" type="submit" onclick="Submit()">Login</button>
 
             <p>Don't have an account? <a href="#">Register</a></p>
     </section>

@@ -42,6 +42,14 @@ input{
     font-size: 15px;
 }
 
+.incorrect{
+    text-align: center;
+    color: rgb(255, 142, 142);
+    animation: PopUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
 .forgot-psw{
     align-self: flex-end;
     margin-right: 10vw;
@@ -61,8 +69,9 @@ button{
     transition: all 0.1s ease-in-out;
 }
 
-button:active{
+.active{
     transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.082);
 }
 
 p{
@@ -121,4 +130,10 @@ footer > p{
     button{
         width: 20vw;
     }
+}
+
+@keyframes PopUp{
+    0% {transform: scale(100%);}
+    10% {transform: scale(110%);}
+    80% {transform: scale(100%);}
 }

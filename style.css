@@ -1,0 +1,124 @@
+body{
+    background-image: url(BackgroundIMG.jpg);
+}
+
+.login-container{
+    justify-self: center;
+    width: 70vw;
+    margin-top: 15vh;
+
+    background-color: rgba(0, 0, 0, 0.322);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-radius: 50px;
+    border-color: rgb(144, 113, 255);
+    border-width: 3px;
+    border-style: solid;
+}
+
+h1{
+    align-self: center;
+    color: rgb(204, 204, 204);
+
+    font-weight: bold;
+
+    margin-top: 30px;
+    margin-bottom: -2px;
+}
+
+input{
+    align-self: center;
+    width: 50vw;
+    border-radius: 10px;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.103);
+
+    color: white;
+    padding-left: 12px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.forgot-psw{
+    align-self: flex-end;
+    margin-right: 10vw;
+}
+
+button{
+    margin: 10px;
+    align-self: center;
+    width: 30vw;
+    height: 6vh;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(145, 145, 145);
+    background-color: rgba(0, 0, 0, 0.267);
+
+    transition: all 0.1s ease-in-out;
+}
+
+button:active{
+    transform: scale(1.02);
+}
+
+p{
+    align-self: center;
+    color: rgb(206, 206, 206);
+}
+
+*{
+    transition: all 0.2s ease-in-out;
+}
+
+.login-container > *:hover, .login-container > *:focus{
+    transform: scale(1.01);
+}
+
+footer{
+    margin-top: 120px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > p{
+    text-align: center;
+    color: rgba(142, 153, 255, 0.425);
+    margin-top: -12px;
+}
+
+.github{
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    color: rgba(142, 153, 255, 0.425);
+    margin-top: -12px;
+}
+
+*:focus{
+    outline-color: white;
+    outline-style: solid;
+    outline-width: 3px;
+}
+
+@media (min-width:900px) {
+    .login-container{
+        width: 50vw;
+    }
+
+    input{
+        width: 30vw;
+    }
+
+    .forgot-psw{
+        margin-right: 9vw;
+    }
+
+    button{
+        width: 20vw;
+    }
+}

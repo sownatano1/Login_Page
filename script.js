@@ -17,12 +17,12 @@ function Submit(){
     }
 
     if (email == "admin@" && password == "1234"){
-        window.location.hred = "page.html"
+        window.location.href = "page.html"
     }
 
     else{
         container.appendChild(paragraph)
-        paragraph.textContent = "E-mail ou senha incorreta!"
+        paragraph.textContent = "Invalid email or password!"
         paragraph.classList.add("incorrect")
     }
 }

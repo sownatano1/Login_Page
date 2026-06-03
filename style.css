@@ -20,6 +20,7 @@ body{
 }
 
 h1{
+    justify-self: center;
     align-self: center;
     color: rgb(204, 204, 204);
 
